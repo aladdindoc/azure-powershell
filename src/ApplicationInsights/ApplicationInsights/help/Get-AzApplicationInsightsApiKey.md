@@ -35,8 +35,8 @@ Get application insights api keys for an application insights resource
 
 ## EXAMPLES
 
-### Example 1 Get Api Keys for an application insights resource
-```
+### Example 1: Get Api Keys for an application insights resource
+```powershell
 PS C:\>  Get-AzApplicationInsightsApiKey -ResourceGroupName "testGroup" -Name "test"
 
 Id                                   Description Permissions                       CreatedDate                   ApiKey
@@ -48,8 +48,8 @@ Id                                   Description Permissions                    
 
 Get application insights api keys for resource "test" in resource group "testGroup".
 
-### Example 2 Get specific API key for an application insights resource
-```
+### Example 2: Get specific API key for an application insights resource
+```powershell
 PS C:\>  Get-AzApplicationInsightsApiKey -ResourceGroupName "testGroup" -Name "test"  -ApiKeyId 
 7c4c61dc-b392-4aa4-992f-ee92b84e5dee
 ApiKey      :

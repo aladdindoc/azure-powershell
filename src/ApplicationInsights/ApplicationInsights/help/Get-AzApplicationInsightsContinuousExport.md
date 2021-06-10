@@ -35,8 +35,8 @@ Get application insights continuous export configuration for an application insi
 
 ## EXAMPLES
 
-### Example 1 Get continuous export for an application insights resource
-```
+### Example 1: Get continuous export for an application insights resource
+```powershell
 PS C:\> Get-AzApplicationInsightsContinuousExport -ResourceGroupName "testgroup" -Name "test"
 
 ExportId                     DocumentTypes                ExportStatus DestinationStorageAccountId
@@ -46,8 +46,8 @@ ZJrfffySPdtG3ESn3iRxVIEFuNY= Request, Performance Counter Preparing    /subscrip
 
 Get application insights continuous export configurations for resource named "test" in resource group "testgroup"
 
-### Example 2 Get continuous export for an application insights resource
-```
+### Example 2: Get continuous export for an application insights resource
+```powershell
 PS C:\> Get-AzApplicationInsightsContinuousExport -ResourceGroupName "testgroup" -Name "test" -ExportId "ZJrfffySPdtG3ESn3iRxVIEFuNY="
 
 ExportId                         : ZJrfffySPdtG3ESn3iRxVIEFuNY=
