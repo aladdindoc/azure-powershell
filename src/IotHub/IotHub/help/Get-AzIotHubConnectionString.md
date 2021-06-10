@@ -23,15 +23,15 @@ You can either get connectionstrings for all the keys or filter them by a specif
 
 ## EXAMPLES
 
-### Example 1 Get All IotHub connectionstrings
-```
+### Example 1: Get All IotHub connectionstrings
+```powershell
 PS C:\> Get-AzIotHubConnectionString -ResourceGroupName "myresourcegroup" -Name "myiothub"
 ```
 
 Gets the connectionstrings for all keys for the iothub named "myiothub"
 
-### Example 2 Get the IotHub connectionstrings for a specific key
-```
+### Example 2: Get the IotHub connectionstrings for a specific key
+```powershell
 PS C:\> Get-AzIotHubConnectionString -ResourceGroupName "myresourcegroup" -Name "myiothub" -KeyName "mykey"
 ```
 

@@ -30,15 +30,15 @@ You can either list all Keys or filter the list by a specific Key Name.
 
 ## EXAMPLES
 
-### Example 1 Get all Keys
-```
+### Example 1: Get all Keys
+```powershell
 PS C:\> Get-AzIotHubKey -ResourceGroupName "myresourcegroup" -Name "myiothub"
 ```
 
 Gets all the Keys for the IotHub named "myiothub"
 
-### Example 2 Get information for a specific Key
-```
+### Example 2: Get information for a specific Key
+```powershell
 PS C:\> Get-AzIotHubKey -ResourceGroupName "myresourcegroup" -Name "myiothub" -KeyName "iothubowner"
 ```
 

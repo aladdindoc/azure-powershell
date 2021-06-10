@@ -24,15 +24,15 @@ You can create the IotHub with either the default properties or specify the inpu
 
 ## EXAMPLES
 
-### Example 1 Create a new IotHub with default properties
-```
+### Example 1: Create a new IotHub with default properties
+```powershell
 PS C:\> New-AzIotHub -ResourceGroupName "myresourcegroup" -Name "myiothub" -SkuName "S1" -Units 1 -Location "northeurope"
 ```
 
 Creates a new IotHub named "myiothub" of the sku "S1", capacity 1 and location "northeurope".
 
-### Example 2 Create a new IotHub with the MaxDeliveryCount of the CloudToDevice Queue set to 20
-```
+### Example 2: Create a new IotHub with the MaxDeliveryCount of the CloudToDevice Queue set to 20
+```powershell
 PS C:\> New-AzIotHub -ResourceGroupName "myresourcegroup" -Name "myiothub" -SkuName "S1" -Units 1 -Location "northeurope" -Properties $properties
 ```
 
