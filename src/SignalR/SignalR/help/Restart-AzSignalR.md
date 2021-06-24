@@ -35,7 +35,7 @@ Restart a SignalR service.
 
 ## EXAMPLES
 
-### Restart a specific SignalR service
+### Example 1: Restart a specific SignalR service
 ```powershell
 PS C:\> Restart-AzSignalR -ResourceGroupName myResourceGroup -Name mysignalr1 -PassThru
 
