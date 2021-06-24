@@ -29,21 +29,21 @@ Get access token
 
 ## EXAMPLES
 
-### Example 1 Get raw access token for ARM endpoint
+### Example 1: Get raw access token for ARM endpoint
 ```powershell
 PS C:\> Get-AzAccessToken
 ```
 
 Get access token of ResourceManager endpoint for current account
 
-### Example 2 Get raw access token for AAD graph endpoint
+### Example 2: Get raw access token for AAD graph endpoint
 ```powershell
 PS C:\> Get-AzAccessToken -ResourceTypeName AadGraph
 ```
 
 Get access token of AAD graph endpoint for current account
 
-### Example 3 Get raw access token for AAD graph endpoint
+### Example 3: Get raw access token for AAD graph endpoint
 ```powershell
 PS C:\> Get-AzAccessToken -ResourceUrl "https://graph.windows.net/"
 ```
