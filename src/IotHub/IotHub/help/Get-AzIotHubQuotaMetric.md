@@ -22,8 +22,8 @@ Gets the Quota Metrics for an IotHub.
 
 ## EXAMPLES
 
-### Example 1 Get the Quota Metrics
-```
+### Example 1: Get the Quota Metrics
+```powershell
 PS C:\> Get-AzIotHubQuotaMetric -ResourceGroupName "myresourcegroup" -Name "myiothub"
 ```
 
