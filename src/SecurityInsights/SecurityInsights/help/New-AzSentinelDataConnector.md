@@ -97,7 +97,7 @@ PS C:\> $DataConnector = New-AzSentinelDataConnector -ResourceGroupName "MyResou
 
 This example creates a **DataConnector** for *Microsoft Cloud App Security* in the specified workspace, and then stores it in the $DataConnector variable.
 
-### Examples 3
+### Example 3: Examples 3
 ```powershell
 $SentinelConnection = @{
     ResourceGroupName = "myResourceGroupName"
