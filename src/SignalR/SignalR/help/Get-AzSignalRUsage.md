@@ -21,7 +21,7 @@ Get the usage quota of a subscription.
 
 ## EXAMPLES
 
-### Get the usage quota by inputting the location
+### Example 1: Get the usage quota by inputting the location
 ```powershell
 PS C:\> Get-AzSignalRUsage eastus
 
