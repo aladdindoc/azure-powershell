@@ -31,8 +31,8 @@ KeyNames are not unique and need to be managed carefully.
 
 ## EXAMPLES
 
-### Example 1 Add a Key to an IotHub
-```
+### Example 1: Add a Key to an IotHub
+```powershell
 PS C:\> Add-AzIotHubKey -ResourceGroupName "myresourcegroup" -Name "myiothub" -KeyName "newkey" -PrimaryKey "primarykey" -SecondaryKey "secondarykey" -Rights RegistryRead
 ```
 
