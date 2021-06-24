@@ -100,7 +100,7 @@ PS C:\>New-AzStorageAccount -ResourceGroupName "MyResourceGroup" -AccountName "m
 This command creates a Storage account with Azure Files AAD DS Authentication, and enable large file share.
 
 ### Example 7: Create a Storage account with enable Files Active Directory Domain Service Authentication and DefaultSharePermission.
-```
+```powershell
 PS C:\>New-AzStorageAccount -ResourceGroupName "MyResourceGroup" -AccountName "mystorageaccount" -Location "eastus2euap" -SkuName "Standard_LRS" -Kind StorageV2  -EnableActiveDirectoryDomainServicesForFile $true `
         -ActiveDirectoryDomainName "mydomain.com" `
         -ActiveDirectoryNetBiosDomainName "mydomain.com" `
@@ -139,7 +139,7 @@ This command creates a Storage account with Queue and Table Service use account-
 Then get the Storage account properties, and view the encryption keytype of Queue and Table Service, and RequireInfrastructureEncryption value.
 
 ### Example 9: Create account MinimumTlsVersion  and AllowBlobPublicAccess, and disable SharedKey Access
-```
+```powershell
 PS C:\> $account = New-AzStorageAccount -ResourceGroupName "MyResourceGroup" -AccountName "mystorageaccount" -Location "eastus2euap" -SkuName "Standard_LRS" -Kind StorageV2 -MinimumTlsVersion TLS1_1 -AllowBlobPublicAccess $false -AllowSharedKeyAccess $false
 
 PS C:\> $account.MinimumTlsVersion
@@ -209,7 +209,7 @@ PS C:\> $$account.SasPolicy.SasExpirationPeriod
 
 This command creates a Storage account with KeyExpirationPeriod and SasExpirationPeriod, then show the created account related properties.
 
-### Example 12: Create a Storage account with Keyvault encryption (access Keyvault with user assigned identity)
+### Example 13: Create a Storage account with Keyvault encryption (access Keyvault with user assigned identity)
 ```powershell
 # Create KeyVault (no need if using exist keyvault)
 PS C:\> $keyVault = New-AzKeyVault -VaultName $keyvaultName -ResourceGroupName $resourceGroupName -Location eastus2euap -EnablePurgeProtection
