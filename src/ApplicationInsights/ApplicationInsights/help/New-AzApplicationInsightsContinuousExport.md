@@ -38,8 +38,8 @@ Create a new application insights continuous export configuration for an applica
 
 ## EXAMPLES
 
-### Example 1 Create a new continuous export configuration for an application insights resource
-```
+### Example 1: Create a new continuous export configuration for an application insights resource
+```powershell
 PS C:\> $sastoken = New-AzStorageContainerSASToken -Name testcontainer -Context $context -ExpiryTime (Get-Date).AddYears(50) -Permission w
 PS C:\> $sasuri = "https://teststorageaccount.blob.core.windows.net/testcontainer" + $sastoken
 PS C:\> New-AzApplicationInsightsContinuousExport -ResourceGroupName "testgroup" -Name "test"
