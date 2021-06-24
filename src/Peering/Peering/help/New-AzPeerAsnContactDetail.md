@@ -22,7 +22,7 @@ Create an in memory PeerAsn contact detail.
 
 ## EXAMPLES
 
-### Create contact detail and add to PeerAsn
+### Example 1: Create contact detail and add to PeerAsn
 ```powershell
 PS C:\> $nocContact = New-AzPeerAsnContactDetail -Role Noc -Email "noc@contoso.com" -Phone "+1 (887) 888-8088"
 PS C:\> $customerContact = New-AzPeerAsnContactDetail -Role Noc -Email "noc@contoso.com" -Phone "+1 (887) 888-8088"
