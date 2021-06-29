@@ -24,8 +24,8 @@ Create a new application insights resource
 
 ## EXAMPLES
 
-### Example 1 Create a new application insights resource
-```
+### Example 1: Create a new application insights resource
+```powershell
 PS C:\>  New-AzApplicationInsights -Kind java -ResourceGroupName testgroup -Name test1027 -location eastus
 Id                 : /subscriptions/{subid}/resourceGroups/testgroup/providers/microsoft.insights/components/test1027
 ResourceGroupName  : testgroup
