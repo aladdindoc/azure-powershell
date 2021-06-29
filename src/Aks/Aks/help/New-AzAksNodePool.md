@@ -35,12 +35,12 @@ Create a new node pool in specified cluster.
 
 ## EXAMPLES
 
-### Create node pool with default parameters
+### Example 1: Create node pool with default parameters
 ```powershell
 PS C:\> New-AzAksNodePool -ResourceGroupName myResouceGroup -ClusterName myCluster -Name mydefault
 ```
 
-### Create Windows Server container on an AKS
+### Example 2: Create Windows Server container on an AKS
 ```powershell
 PS C:\> $cred = ConvertTo-SecureString -AsPlainText "Password!!123" -Force
 PS C:\> New-AzAks -ResourceGroupName myResourceGroup -Name myCluster -WindowsProfileAdminUserName azureuser -WindowsProfileAdminUserPassword $cred -NetworkPlugin azure -NodeVmSetType VirtualMachineScaleSets
