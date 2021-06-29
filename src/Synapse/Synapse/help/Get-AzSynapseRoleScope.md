@@ -36,7 +36,7 @@ PS C:\> Get-AzSynapseRoleScope -WorkspaceName ContosoWorkspace
 
 This command gets all role scopes under a workspace.
 
-### Example 6
+### Example 2
 ```powershell
 PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | Get-AzSynapseRoleScope
